@@ -1,10 +1,8 @@
 # totaUI: A Local LLM Web Interface
 
-![totaUI Logo](https://via.placeholder.com/800x200?text=totaUI) <!-- Replace with your logo or remove this line -->
-
 ## Overview
 
-totaUI is a beautiful and interactive web interface designed for local Language Models (LLMs) like `tota`, `totasafe`, and `nangatota`. This application allows users to interact with their chosen model in a chat-like format, enabling real-time text generation with markdown compatibility. 
+totaUI is a beautiful and interactive web interface designed for local Language Models (LLMs). This application allows users to interact with their chosen model in a chat-like format, enabling real-time text generation with markdown compatibility. 
 
 ### Features
 
