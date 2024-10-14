@@ -10,7 +10,6 @@ totaUI is a beautiful and interactive web interface designed for local Language 
 
 - **Real-time Streaming:** Receive responses word by word as they are generated.
 - **Model Selector:** Choose from multiple available models.
-- **Markdown Support:** Format responses using Markdown for better readability.
 - **Profile Icons:** Distinct icons for user and AI messages.
 - **Dark Mode Design:** A visually appealing dark theme with smooth animations.
 

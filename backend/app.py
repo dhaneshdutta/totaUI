@@ -15,7 +15,7 @@ def generate():
     if not user_input:
         return Response("No input provided", status=400)
 
-    model_name = "tota"
+    model_name = "YOUR_DEFAULT_MODEL_NAME"
 
     payload = {
         "prompt": user_input,

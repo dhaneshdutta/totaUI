@@ -1,4 +1,4 @@
-let selectedModel = "tota";
+let selectedModel = "YOUR_DEFAULT_MODEL_NAME";
 
 function selectModel() {
     const modelSelect = document.getElementById('models');
@@ -30,7 +30,7 @@ function generate() {
     const aiMessageContainer = document.createElement('div');
     aiMessageContainer.className = 'message ai-message';
     const aiMessageText = document.createElement('span');
-    aiMessageText.className = 'ai-text'; // Unique class for each AI response
+    aiMessageText.className = 'ai-text';
     aiMessageText.innerHTML = `<span class="profile-icon">🤖</span> <span></span>`;
     aiMessageContainer.appendChild(aiMessageText);
     messagesDiv.appendChild(aiMessageContainer);
