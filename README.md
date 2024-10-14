@@ -12,10 +12,6 @@ totaUI is a beautiful and interactive web interface designed for local Language 
 - **Profile Icons:** Distinct icons for user and AI messages.
 - **Dark Mode Design:** A visually appealing dark theme with smooth animations.
 
-## Demo
-
-You can view a live demo [here](#) (add a link if applicable).
-
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -83,11 +79,3 @@ Once the application is running, you can:
 ## Contributions
 
 Contributions are welcome! If you would like to contribute, please fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For questions or feedback, feel free to reach out to [your-email@example.com](mailto:your-email@example.com).
