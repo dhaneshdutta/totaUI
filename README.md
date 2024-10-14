@@ -4,14 +4,12 @@
 
 ![preview](assets/preview.png)
 
-totaUI is a beautiful and interactive web interface designed for local Language Models (LLMs). This application allows users to interact with their chosen model in a chat-like format, enabling real-time text generation with markdown compatibility. 
+totaUI is a beautiful and interactive web interface designed for local Language Models (LLMs). This application allows users to interact with their chosen model in a chat-like format, enabling real-time text generation.
 
 ### Features
 
 - **Real-time Streaming:** Receive responses word by word as they are generated.
 - **Model Selector:** Choose from multiple available models.
-- **Profile Icons:** Distinct icons for user and AI messages.
-- **Dark Mode Design:** A visually appealing dark theme with smooth animations.
 
 ## Prerequisites
 
@@ -70,12 +68,15 @@ Follow these steps to set up the project locally:
 
    Open your web browser and go to `http://localhost:8000` to interact with the LLM!
 
+## Model Customization
+
+By default, totaUI is set to work with a general local model. If you'd like to replace this with your own model, simply edit the configuration file in the backend to point to your preferred model files or API. This allows users to easily integrate any locally installed models or other APIs as needed.
+
 ## Usage
 
 Once the application is running, you can:
 - Select your preferred model from the dropdown in the top right.
 - Type your messages in the input box and hit "Send".
-- Receive responses in real time, with support for markdown formatting.
 
 ## Contributions
 
