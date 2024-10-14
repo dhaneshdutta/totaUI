@@ -2,6 +2,8 @@
 
 ## Overview
 
+![preview](assets/preview.png)
+
 totaUI is a beautiful and interactive web interface designed for local Language Models (LLMs). This application allows users to interact with their chosen model in a chat-like format, enabling real-time text generation with markdown compatibility. 
 
 ### Features
