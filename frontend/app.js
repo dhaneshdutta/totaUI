@@ -15,22 +15,18 @@ function generate() {
     console.log("User input:", userInput);
 
     if (!userInput) {
-        return; // Do nothing if input is empty
+        return; 
     }
 
-    // Clear the input field
     document.getElementById('input').value = "";
 
-    // Create a user message element with emoji as profile icon
     const userMessage = document.createElement('div');
     userMessage.className = 'message user-message';
     userMessage.innerHTML = `<span class="profile-icon">👤</span> <span>${userInput}</span>`;
     messagesDiv.appendChild(userMessage);
     
-    // Scroll to the bottom of the chat
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
 
-    // Create an AI message container for this specific interaction
     const aiMessageContainer = document.createElement('div');
     aiMessageContainer.className = 'message ai-message';
     const aiMessageText = document.createElement('span');
@@ -39,10 +35,8 @@ function generate() {
     aiMessageContainer.appendChild(aiMessageText);
     messagesDiv.appendChild(aiMessageContainer);
 
-    // Scroll to the bottom of the chat
     messagesDiv.scrollTop = messagesDiv.scrollHeight;
 
-    // Use the EventSource-like fetch to handle streaming
     fetch('http://localhost:5000/generate', {
         method: 'POST',
         headers: {
@@ -56,24 +50,20 @@ function generate() {
     .then(response => {
         const reader = response.body.getReader();
         const decoder = new TextDecoder('utf-8');
-        let fullResponse = ""; // To accumulate the full response
+        let fullResponse = ""; 
 
-        // Stream the response body
         return reader.read().then(function processText({ done, value }) {
             if (done) {
                 console.log("Stream completed.");
                 return;
             }
 
-            // Decode the text and append it to this specific AI message
             const chunk = decoder.decode(value, { stream: true });
             aiMessageText.lastElementChild.textContent += chunk;
             fullResponse += chunk;
 
-            // Scroll to the bottom as new text arrives
             messagesDiv.scrollTop = messagesDiv.scrollHeight;
 
-            // Continue reading the stream
             return reader.read().then(processText);
         });
     })
