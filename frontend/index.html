@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>totaUI</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Model Selector -->
+        <div class="model-selector">
+            <label for="models">Model: </label>
+            <select id="models" onchange="selectModel()">
+                <option value="tota">Tota</option>
+                <option value="totasafe">TotaSafe</option>
+                <option value="nangatota">NangaTota</option>
+            </select>
+        </div>
+        <h1>totaUI</h1>
+        <div id="chat-box">
+            <div id="messages"></div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="input" placeholder="Type your message here...">
+            <button onclick="generate()">Send</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

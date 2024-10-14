@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #292929);
+    color: #e0e0e0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background: #2b2b2b;
+}
+
+/* Model Selector */
+.model-selector {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.model-selector label {
+    color: #ffffff;
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+.model-selector select {
+    background-color: #444444;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.model-selector select:hover {
+    background-color: #555555;
+}
+
+/* Heading with Glow Effect */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 50px 0;
+    color: #ffffff;
+    animation: glow 2s infinite alternate;
+    text-shadow: 0px 0px 10px #6200ea;
+}
+
+/* Chat Box */
+#chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: rgba(44, 44, 44, 0.9);
+}
+
+/* Messages */
+#messages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    padding: 15px;
+    background-color: #333333;
+    border-top: 1px solid #444444;
+}
+
+/* Input Styling */
+#input {
+    flex: 1;
+    padding: 12px;
+    font-size: 1em;
+    background-color: #444444;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#input:focus {
+    background-color: #555555;
+    outline: none;
+}
+
+/* Button with Animation */
+button {
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #6200ea;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #3700b3;
+    transform: scale(1.1);
+}
+
+/* Message Styles */
+.message-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #e0e0e0;
+    margin-right: 10px;
+}
+
+.message {
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    transition: transform 0.3s ease;
+}
+
+.message:hover {
+    transform: scale(1.02);
+}
+
+.user-message {
+    background-color: #6200ea;
+    color: white;
+    align-self: flex-end;
+}
+
+.ai-message {
+    background-color: #444444;
+    color: white;
+    align-self: flex-start;
+}
+
+/* Background Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Heading Glow Animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #6200ea, 0 0 20px #6200ea, 0 0 30px #3700b3, 0 0 40px #3700b3;
+    }
+    100% {
+        text-shadow: 0 0 20px #6200ea, 0 0 30px #6200ea, 0 0 40px #3700b3, 0 0 50px #3700b3;
+    }
+}
+
+/* Profile Icon Styles */
+.profile-icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+/* Adjusted Message Styles */
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%; /* Limit message width */
+    word-wrap: break-word; /* Allow long words to wrap */
+    display: flex;
+    align-items: center; /* Align text with emoji */
+}
+
